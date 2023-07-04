@@ -12,11 +12,11 @@
     "deploy": "bash deploy.sh"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.63",
-    "@vuepress/plugin-docsearch": "^2.0.0-beta.63",
-    "vue": "^3.2.47",
-    "vuepress": "2.0.0-beta.63",
-    "vuepress-plugin-photo-swipe": "^2.0.0-beta.228",
-    "vuepress-theme-hope": "2.0.0-beta.228"
+    "@vuepress/client": "2.0.0-beta.64",
+    "@vuepress/plugin-docsearch": "2.0.0-beta.64",
+    "vue": "^3.3.4",
+    "vuepress": "2.0.0-beta.64",
+    "vuepress-plugin-photo-swipe": "2.0.0-beta.230",
+    "vuepress-theme-hope": "2.0.0-beta.230"
   }
 }
