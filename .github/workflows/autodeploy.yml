@@ -29,7 +29,7 @@ jobs:
         run: pnpm run docs:build
 
       - name: Deploy to github pages
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4.4.2
         with:
           repository-name: XiaotianGG1003/xiaotiangg.github.io
           branch: master
