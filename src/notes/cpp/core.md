@@ -87,7 +87,8 @@ const int c_g_b = 10;
 int main() {
 
 	//局部变量
-
+	int a = 10;
+	int b = 10;
 
 	//打印地址
 	cout << "局部变量a地址为： " << (int)&a << endl;
