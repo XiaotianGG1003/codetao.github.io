@@ -34,4 +34,4 @@ jobs:
           repository-name: XiaotianGG1003/xiaotiangg.github.io
           branch: master
           folder: src/.vuepress/dist
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
