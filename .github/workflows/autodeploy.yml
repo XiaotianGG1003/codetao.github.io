@@ -1,4 +1,4 @@
-name: Deploy Blog
+name: Deploy blog
 
 on:
   push:
@@ -6,32 +6,33 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  deploy-gh-pages:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          submodules: true
+          fetch-depth: 0
 
-      - uses: pnpm/action-setup@v2
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
         with:
-          version: latest
-          run_install: |
-            - recursive: true
+          run_install: true
 
-      - name: Build GitHub Pages
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+
+      - name: Build Blog
         env:
-          NODE_OPTIONS: --max_old_space_size=8192
-          BASE: /
+          NODE_OPTIONS: --max_old_space_size=4096
         run: pnpm run docs:build
 
-      - name: Deploy to github pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.2
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          repository-name: XiaotianGG1003/xiaotiangg1003.github.io
           branch: master
-          folder: src/.vuepress/dist
-          token: ${{ secrets.GITHUB_TOKEN }}
+          folder: dist
