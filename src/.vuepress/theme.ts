@@ -44,10 +44,10 @@ export default hopeTheme({
     roundAvatar: false,
     description: "一名普通在校大学生",
     medias: {
-      BiliBili: "https://example.com",
-      Email: "mailto:info@example.com",
-      GitHub: "https://example.com",
-      QQ: "https://example.com",
+      GitHub: "https://github.com/XiaotianGG1003",
+      // BiliBili: "https://example.com",
+      // Email: "mailto:info@example.com",
+      // QQ: "https://example.com",
     },
     //文章信息
     articleInfo: ["Author", "Original", "Date", "PageView", "Category", "Tag"],
