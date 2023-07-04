@@ -31,7 +31,7 @@ jobs:
       - name: Deploy to github pages
         uses: JamesIves/github-pages-deploy-action@v4.4.2
         with:
-          repository-name: XiaotianGG1003/xiaotiangg.github.io
+          repository-name: XiaotianGG1003/xiaotiangg1003.github.io
           branch: master
           folder: src/.vuepress/dist
           token: ${{ secrets.GITHUB_TOKEN }}
