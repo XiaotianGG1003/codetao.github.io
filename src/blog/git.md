@@ -1,7 +1,7 @@
 ---
 title: git常用指令
 date: 2023-08-30
-categpry:
+category:
   - git
 tag:
   - 文章
