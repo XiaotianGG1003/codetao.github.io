@@ -6,7 +6,7 @@ export default sidebar({
     {
       text: "文章",
       icon: "book",
-      // link: "/blog/",
+      link: "/blog/",
       prefix: "blog/",
       collapsible: true,
       children: "structure"
@@ -17,7 +17,7 @@ export default sidebar({
       // 可选的, 分组标题对应的图标
       icon: "pen-to-square",
       // 可选的, 分组标题对应的链接
-      // link: "/notes/",
+      link: "/notes/",
       // 可选的，会添加到每个 item 链接地址之前
       prefix: "notes/",
       // 可选的, 设置分组是否可以折叠，默认值是 false,
