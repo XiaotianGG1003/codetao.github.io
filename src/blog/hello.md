@@ -5,8 +5,8 @@ tag:
   - 文章
 ---
 
-<!-- more -->
-
 这是一个测试
+
+<!-- more -->
 
 <!-- <AutoCatalog base='/' /> -->
